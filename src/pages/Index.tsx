@@ -11,11 +11,15 @@ const Index = () => {
         }}
       >
         <div 
-          className="absolute inset-0 bg-cover bg-no-repeat"
+          className="absolute bg-cover bg-no-repeat"
           style={{ 
             backgroundImage: 'url(https://cdn.poehali.dev/files/f49f3b43-cc34-4a09-bc0a-07952a83aeb1.jpeg)',
-            backgroundPosition: 'center 35%',
-            filter: 'brightness(0.95)'
+            backgroundPosition: 'center top',
+            filter: 'brightness(0.95)',
+            top: '50mm',
+            left: 0,
+            right: 0,
+            bottom: 0
           }}
         />
         
