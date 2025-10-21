@@ -16,7 +16,7 @@ const Index = () => {
             backgroundImage: 'url(https://cdn.poehali.dev/files/f49f3b43-cc34-4a09-bc0a-07952a83aeb1.jpeg)',
             backgroundPosition: 'center top',
             filter: 'brightness(0.95)',
-            top: '50mm',
+            top: '20mm',
             left: 0,
             right: 0,
             bottom: 0
