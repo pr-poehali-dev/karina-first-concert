@@ -1,64 +1,58 @@
-import { Card } from "@/components/ui/card";
-import Icon from "@/components/ui/icon";
-
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
-      <div className="max-w-2xl w-full animate-fade-in">
-        <div className="text-center mb-12">
-          <h1 className="text-6xl md:text-7xl font-light mb-3 text-foreground tracking-wide">
-            КАРИНА МИНОР
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground italic font-light">
-            Приглашает на свой первый концерт
-          </p>
-        </div>
-
-        <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent mb-12"></div>
-
-        <h2 className="text-4xl md:text-5xl font-light text-center mb-12 text-foreground/80">
-          Я только начинаю...
-        </h2>
-
-        <Card className="bg-card border-border/50 shadow-lg p-8 md:p-12">
-          <div className="space-y-6">
-            <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon name="Calendar" size={24} className="text-primary" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-1">Дата</p>
-                <p className="text-2xl font-medium">15 декабря</p>
-              </div>
+    <div className="min-h-screen bg-neutral-100 flex items-center justify-center p-8">
+      <div 
+        className="w-[210mm] h-[297mm] bg-white shadow-2xl relative overflow-hidden"
+        style={{ aspectRatio: '210/297' }}
+      >
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: 'url(https://cdn.poehali.dev/files/f49f3b43-cc34-4a09-bc0a-07952a83aeb1.jpeg)',
+            filter: 'brightness(0.95)'
+          }}
+        />
+        
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
+        
+        <div className="relative h-full flex flex-col justify-between p-12">
+          <div className="text-center">
+            <div className="inline-block bg-white/95 backdrop-blur-sm px-8 py-3 mb-3">
+              <h2 className="text-3xl font-light tracking-[0.3em] text-neutral-800">
+                Я ТОЛЬКО НАЧИНАЮ
+              </h2>
             </div>
+          </div>
 
-            <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon name="MapPin" size={24} className="text-primary" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-1">Место</p>
-                <p className="text-2xl font-medium">Ресторан «Кобзарь»</p>
-                <p className="text-base text-muted-foreground mt-1">ул. Михайлова, 29, корпус 2</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Icon name="Clock" size={24} className="text-primary" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-1">Время</p>
-                <p className="text-2xl font-medium">19:00</p>
+          <div className="mt-auto">
+            <div className="bg-white/95 backdrop-blur-sm p-8 space-y-4">
+              <h1 className="text-6xl font-light tracking-wide text-neutral-900 mb-6">
+                КАРИНА МИНОР
+              </h1>
+              
+              <div className="h-px bg-gradient-to-r from-primary via-primary to-transparent mb-6"></div>
+              
+              <div className="space-y-3 text-neutral-800">
+                <div className="flex items-baseline gap-3">
+                  <span className="text-sm uppercase tracking-wider text-neutral-600 w-20">Дата</span>
+                  <span className="text-2xl font-light">15 декабря</span>
+                </div>
+                
+                <div className="flex items-baseline gap-3">
+                  <span className="text-sm uppercase tracking-wider text-neutral-600 w-20">Время</span>
+                  <span className="text-2xl font-light">19:00</span>
+                </div>
+                
+                <div className="flex items-baseline gap-3">
+                  <span className="text-sm uppercase tracking-wider text-neutral-600 w-20">Место</span>
+                  <div>
+                    <p className="text-2xl font-light">Ресторан «Кобзарь»</p>
+                    <p className="text-sm text-neutral-600 mt-1">ул. Михайлова, 29, корпус 2</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </Card>
-
-        <div className="mt-12 text-center">
-          <p className="text-lg md:text-xl text-muted-foreground italic font-light max-w-lg mx-auto">
-            Погрузитесь в атмосферу первых шагов, надежд и вдохновения.
-          </p>
         </div>
       </div>
     </div>
