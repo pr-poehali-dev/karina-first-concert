@@ -104,3 +104,26 @@
     font-family: "Cormorant", serif;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .min-h-screen {
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+    background: white;
+  }
+}
